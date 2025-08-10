@@ -3,9 +3,7 @@ import java.util.Scanner;
 public class library_system {
     public static void main(String[] args) {
         Scanner sc = new  Scanner(System.in);
-        Members m = new Members(sc);
-        m.arr_menber();
-        m.arr_dis_member();
+        Library_Manager lm = new Library_Manager(sc);
     }
 }
 
@@ -96,9 +94,18 @@ class Books {
 class Library_Manager {
    
     Scanner sc;
+    Members M = new Members(sc);
+    Books B = new Books(sc);
 
     Library_Manager(Scanner scanner){
         this.sc = scanner;
+    }
+
+    void manager(){
+
+    }
+    void assemble(){
+
     }
 
 }
