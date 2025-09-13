@@ -49,7 +49,7 @@ class Members {
         }
            
         }
-        void search_book(){
+        void search_member(){
 
         boolean f = false ;
 
@@ -70,7 +70,7 @@ class Members {
             System.out.println("DO WANT TO TRY AGAIN (Y/N) : ");
             char ch = sc.nextLine().charAt(0);
             if(ch == 'y' || ch == 'Y'){
-                search_book();
+                search_member();
             }
             else{
                 System.out.println("\n--------------------------------\n===========|THANK YOU|===========\n--------------------------------");
@@ -224,7 +224,7 @@ class Library_Manager {
         sc.nextLine();
         switch (c) {
             case 1:
-                M.search_book();
+                M.search_member();
                 manager();
                 break;
             
